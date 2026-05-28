@@ -860,6 +860,364 @@ body{
   .decision-grid{grid-template-columns:1fr}
 }
 
+
+/* UX PRODUCTER + RESPONSIVO FINAL — PUBLICAÇÃO */
+html,body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+*{
+  min-width:0;
+}
+.wrap,.topbar-inner{
+  max-width:100%;
+}
+img,video,iframe,svg{
+  max-width:100%;
+  height:auto;
+}
+body{
+  text-rendering:optimizeLegibility;
+}
+.topbar{
+  z-index:100;
+}
+.nav{
+  min-width:0;
+}
+.nav a{
+  white-space:nowrap;
+}
+.hero-grid{
+  align-items:center;
+}
+.hero-card img{
+  object-position:center;
+}
+.section-head{
+  max-width:880px;
+}
+.price,.summary-val,.condition-card strong,.cash-value strong,.stat strong{
+  overflow-wrap:anywhere;
+}
+.btn{
+  line-height:1.2;
+}
+.card,.price-card,.summary,.step,.date-box,.place,.pay,.company-card,.authority-item,.marketing-card,.decision-card,.final-step,.resp-card,.condition-card{
+  max-width:100%;
+}
+
+/* Desktop comum e notebook */
+@media(min-width:981px) and (max-width:1380px){
+  .wrap{
+    width:min(1080px,100%);
+  }
+  .hero{
+    padding:58px 0 54px;
+  }
+  .hero-grid{
+    grid-template-columns:minmax(0,.92fr) minmax(340px,1.08fr);
+    gap:42px;
+  }
+  h1{
+    font-size:clamp(42px,4.25vw,58px);
+    max-width:660px;
+  }
+  h2{
+    font-size:clamp(30px,3.8vw,46px);
+  }
+  .lead{
+    font-size:15.8px;
+    line-height:1.68;
+  }
+  .hero-card img{
+    height:235px;
+  }
+  .section{
+    padding:64px 0;
+  }
+  .section-tight{
+    padding:46px 0;
+  }
+}
+
+/* Tablet */
+@media(max-width:980px){
+  .topbar-inner{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:10px;
+  }
+  .brand{
+    width:100%;
+    white-space:normal;
+    line-height:1.15;
+  }
+  .nav{
+    width:100%;
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    gap:6px;
+    padding-bottom:3px;
+    scrollbar-width:none;
+  }
+  .nav::-webkit-scrollbar{
+    display:none;
+  }
+  .nav a{
+    flex:0 0 auto;
+    font-size:11.5px;
+    padding:7px 10px;
+  }
+  .hero-grid,.grid-2,.route,.company-grid,.authority-band,.resp-grid{
+    grid-template-columns:1fr !important;
+  }
+  .hero-card{
+    max-width:760px;
+    margin:auto;
+  }
+  .grid-3,.grid-4,.price-grid,.payment-grid,.flow,.marketing-grid,.decision-grid,.final-grid,.condition-grid,.value-stack,.ops-grid{
+    grid-template-columns:repeat(2,1fr) !important;
+  }
+  .date-grid{
+    grid-template-columns:repeat(3,1fr) !important;
+  }
+  .not-grid{
+    grid-template-columns:repeat(2,1fr) !important;
+  }
+  .arrow{
+    transform:rotate(90deg);
+    min-height:38px;
+  }
+}
+
+/* Celular */
+@media(max-width:760px){
+  .topbar-inner{
+    padding:10px 14px;
+  }
+  .brand{
+    font-size:13.5px;
+  }
+  .brand-mark{
+    width:34px;
+    height:34px;
+    flex:0 0 34px;
+    border-radius:11px;
+  }
+  .nav a{
+    font-size:10.8px;
+    padding:7px 9px;
+  }
+  .hero{
+    padding:34px 0 40px;
+  }
+  .badge{
+    font-size:11px;
+    line-height:1.3;
+    padding:9px 12px;
+    margin-bottom:14px;
+  }
+  .kicker{
+    font-size:10px;
+    letter-spacing:.13em;
+    margin-bottom:10px;
+  }
+  .kicker:before{
+    width:22px;
+    height:2px;
+  }
+  h1{
+    font-size:clamp(31px,10.4vw,41px);
+    line-height:1.02;
+    letter-spacing:-.055em;
+    max-width:100%;
+  }
+  h2{
+    font-size:clamp(26px,8.4vw,34px);
+    line-height:1.06;
+    letter-spacing:-.052em;
+  }
+  h3{
+    font-size:20px;
+    line-height:1.12;
+  }
+  .lead,.section-lead{
+    font-size:14px;
+    line-height:1.66;
+    margin-top:13px;
+  }
+  .hero-actions{
+    display:none;
+  }
+  .hero-card{
+    border-radius:20px;
+  }
+  .hero-card-grid{
+    grid-template-columns:1fr 1fr;
+  }
+  .hero-card img{
+    height:150px;
+  }
+  .hero-caption{
+    padding:14px;
+  }
+  .hero-caption b{
+    font-size:17px;
+  }
+  .hero-caption span{
+    font-size:12.5px;
+  }
+  .section,.section-tight{
+    padding:40px 0;
+  }
+  .section-head{
+    margin-bottom:20px;
+  }
+  .grid-3,.grid-4,.price-grid,.payment-grid,.flow,.marketing-grid,.decision-grid,.final-grid,.condition-grid,.value-stack,.ops-grid,.date-grid,.not-grid,.company-stats{
+    grid-template-columns:1fr !important;
+    gap:12px;
+  }
+  .card,.step,.date-box,.company-hero,.company-card,.authority-card,.authority-item,.marketing-card,.decision-card,.final-step,.resp-card,.condition-card,.not-included,.close-banner{
+    padding:17px;
+    border-radius:20px;
+  }
+  .icon{
+    width:40px;
+    height:40px;
+    border-radius:14px;
+    margin-bottom:12px;
+  }
+  .place{
+    border-radius:20px;
+  }
+  .place img{
+    height:170px;
+  }
+  .place-content{
+    padding:16px;
+  }
+  .price-card,.summary,.cash-card{
+    border-radius:20px;
+  }
+  .price-head{
+    padding:13px 15px;
+    font-size:11.5px;
+    line-height:1.25;
+  }
+  .price-body{
+    padding:17px;
+  }
+  .price{
+    font-size:34px;
+  }
+  .summary-head{
+    padding:18px;
+  }
+  .summary-head h3{
+    font-size:22px;
+  }
+  .summary-row{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:15px 18px;
+  }
+  .summary-val{
+    text-align:left;
+    white-space:normal;
+    font-size:21px;
+  }
+  .cash-card-inner{
+    grid-template-columns:1fr !important;
+    padding:18px;
+  }
+  .cash-card h3,.close-banner h3,.authority-card h3,.company-hero h3{
+    font-size:23px;
+  }
+  .cash-value strong,.condition-card strong{
+    font-size:32px;
+  }
+  .pay .pct,.stat strong{
+    font-size:30px;
+  }
+  .date-pill{
+    min-height:auto;
+  }
+  .date-pill b{
+    font-size:15px;
+  }
+  .date-pill span,.date-pill small{
+    font-size:11.5px;
+  }
+  .not-grid div{
+    font-size:12.8px;
+  }
+  .cta{
+    text-align:left;
+  }
+  .cta .wrap{
+    padding-left:18px;
+    padding-right:18px;
+  }
+  .cta p{
+    font-size:14px;
+    line-height:1.66;
+    margin:14px 0 22px;
+  }
+  .cta .btn{
+    width:100%;
+    border-radius:15px;
+  }
+  footer{
+    padding:28px 0 24px;
+  }
+  .footer{
+    align-items:flex-start;
+  }
+}
+
+/* Celular pequeno */
+@media(max-width:390px){
+  .wrap{
+    padding-left:13px;
+    padding-right:13px;
+  }
+  h1{
+    font-size:30px;
+  }
+  h2{
+    font-size:25px;
+  }
+  .brand{
+    font-size:12.8px;
+  }
+  .nav a{
+    font-size:10.3px;
+    padding:7px 8px;
+  }
+  .hero-card-grid{
+    grid-template-columns:1fr;
+  }
+  .hero-card img{
+    height:150px;
+  }
+  .price{
+    font-size:31px;
+  }
+  .summary-val{
+    font-size:20px;
+  }
+}
+
+/* Acessibilidade visual */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .fade{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+
 </style>
 </head>
 <body id="top">
@@ -867,9 +1225,11 @@ body{
  <div class="topbar-inner">
   <a class="brand" href="#top"><span class="brand-mark">OE</span>Alegria Produções <em>×</em> Osasco Express</a>
   
+
 <div class="nav">
       <a href="#resumo">Resumo</a>
       <a href="#valores">Valores</a>
+      <a href="#condicoes">Condição</a>
       <a href="#operacao-dia">Operação</a>
       <a href="#osasco-express">Empresa</a>
       <a class="primary" href="#aceite">Aceite</a>
