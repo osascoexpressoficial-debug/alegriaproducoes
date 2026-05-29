@@ -1,15 +1,15 @@
 # Proposta Alegria Produções Artísticas - Osasco Express
 
-Pacote final para subir no GitHub Pages.
+Pacote final corrigido para subir no GitHub Pages.
 
 ## Estrutura
 - `index.html`
 - `assets/`
 
-## Revisão final
-- Nova imagem premium do motoboy aplicada no hero.
-- Foto única no lado direito, sem divisão e sem área vazia.
-- Copy do hero revisada.
-- Termo “catering” removido.
-- Datas no celular ficam recolhidas e podem ser abertas/fechadas.
-- Sem arquivos internos de revisão ou bastidor.
+## Correção crítica
+- Hero corrigido para não ficar preto.
+- Imagem convertida para JPG leve e compatível: `assets/motoboy-paulista-hero.jpg`.
+- O card usa a imagem tanto como `<img>` quanto como `background-image` de segurança.
+- Foto única no lado direito.
+- Sem “catering”.
+- Datas no celular mantidas com abrir/fechar.
