@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orçamento | Alegria Produções Artísticas × Osasco Express</title>
+<meta name="description" content="Orçamento para retirada e entrega programada de lanches entre Dona Deôla e Teatro BTG Pactual Hall.">
+<meta property="og:title" content="Alegria Produções Artísticas × Osasco Express">
+<meta property="og:description" content="Retirada e entrega programada de lanches para apoio/catering, com valor fechado por operação e nota fiscal.">
+<meta property="og:image" content="assets/motoboy-osasco-express-avenida-paulista.png">
+<style>
+:root{
+ --navy:#11182d;
+ --navy2:#070b16;
+ --gold:#c79a45;
+ --gold2:#e8c674;
+ --orange:#e46c2c;
+ --cream:#fff8ed;
+ --paper:#fffdf8;
+ --ink:#21170f;
+ --muted:#6f6258;
+ --line:#ead8bf;
+ --green:#126342;
+ --red:#a92a22;
+ --shadow:0 28px 78px rgba(17,24,45,.18);
+ --soft:0 14px 36px rgba(33,23,15,.08);
+ --radius:28px;
+ --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0;min-width:0}
+html,body{max-width:100%;overflow-x:hidden}
+html{scroll-behavior:smooth}
+body{
+ font-family:Arial,Helvetica,sans-serif;
+ color:var(--ink);
+ line-height:1.62;
+ background:
+  radial-gradient(circle at 84% 0%,rgba(199,154,69,.30),transparent 28%),
+  radial-gradient(circle at 8% 18%,rgba(228,108,44,.13),transparent 26%),
+  linear-gradient(180deg,#fffdf7 0%,#fff8ed 50%,#f5ead7 100%);
+ -webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{width:min(var(--max),100%);margin:auto;padding:0 clamp(16px,4vw,24px)}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(255,253,248,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(17,24,45,.12)}
+.topbar-inner{width:min(var(--max),100%);margin:auto;padding:12px clamp(16px,4vw,24px);display:flex;justify-content:space-between;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--navy);white-space:nowrap}
+.brand-mark{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--navy),#25375f);color:var(--gold2);display:grid;place-items:center;font-weight:900;box-shadow:0 10px 22px rgba(17,24,45,.18)}
+.brand em{font-style:normal;color:var(--gold)}
+.nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.nav a{font-size:12px;font-weight:900;color:var(--muted);padding:8px 11px;border-radius:999px}
+.nav a:hover{background:rgba(17,24,45,.07)}
+.nav.primary{background:var(--navy);color:#fff}
+.section{padding:72px 0}
+.section-tight{padding:52px 0}
+.light{background:rgba(255,255,255,.52)}
+.kicker{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px}
+.kicker:before{content:"";width:30px;height:3px;background:currentColor;border-radius:999px}
+h1,h2,h3{font-weight:900;letter-spacing:-.045em;line-height:1.04;color:var(--navy)}
+h1{font-size:clamp(42px,4.8vw,64px);max-width:710px}
+h2{font-size:clamp(30px,4.4vw,52px);max-width:900px}
+h3{font-size:23px}
+p{color:var(--muted)}
+strong{font-weight:900;color:inherit}
+.hero{padding:68px 0 62px;border-bottom:1px solid rgba(17,24,45,.10);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(360px,1.08fr);gap:clamp(36px,5vw,72px);align-items:center}
+.badge{display:inline-flex;max-width:100%;width:fit-content;padding:10px 14px;border-radius:999px;border:1px solid rgba(199,154,69,.42);background:rgba(255,255,255,.70);color:var(--navy);font-size:12px;font-weight:900;line-height:1.25;margin-bottom:18px}
+.hero h1 span{color:var(--orange)}
+.lead{font-size:16px;line-height:1.74;max-width:650px;margin-top:18px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:15px 22px;font-size:14px;font-weight:900;text-align:center;transition:.18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--navy);color:#fff;box-shadow:0 18px 36px rgba(17,24,45,.24)}
+.btn-secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}
+.hero-card{border-radius:34px;overflow:hidden;background:#fff;border:1px solid rgba(199,154,69,.30);box-shadow:var(--shadow)}
+.hero-card-grid{display:grid;grid-template-columns:1fr 1fr}
+.hero-card img{width:100%;height:265px;object-fit:cover}
+.hero-caption{padding:18px;background:linear-gradient(135deg,var(--navy),#1f2d50);color:#fff}
+.hero-caption b{display:block;font-size:19px;line-height:1.18;color:#fff}
+.hero-caption span{font-size:13px;color:rgba(255,255,255,.74)}
+.note,.notice,.warning{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 18px 18px 0;padding:16px 18px;color:var(--muted);font-size:14px;line-height:1.72;margin-top:18px}
+.warning{border-left-color:var(--orange);background:#fff8ef}
+.section-head{max-width:920px;margin-bottom:28px}
+.section-lead{font-size:15.5px;line-height:1.78;max-width:840px;margin-top:12px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card,.price-card,.summary,.step,.date-box{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--soft);color:var(--ink)}
+.card,.step{padding:22px}
+.card h3,.step h3{margin-bottom:8px}
+.card p,.step p,.price-body p{font-size:13.5px;line-height:1.7}
+.icon{width:46px;height:46px;border-radius:16px;background:#fff0d4;color:var(--orange);display:grid;place-items:center;margin-bottom:14px;font-size:22px;font-weight:900}
+.route{display:grid;grid-template-columns:1fr 58px 1fr;gap:16px;align-items:stretch}
+.place{background:var(--paper);border:1px solid var(--line);border-radius:26px;box-shadow:var(--soft);overflow:hidden}
+.place img{width:100%;height:210px;object-fit:cover}
+.place-content{padding:18px}
+.place-content small{display:block;color:var(--gold);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:10px;margin-bottom:8px}
+.arrow{display:grid;place-items:center;color:var(--gold);font-size:34px;font-weight:900}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price-card{overflow:hidden}
+.price-head{padding:16px 18px;border-bottom:1px solid var(--line);font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;color:var(--navy);background:#fff2d8}
+.price-body{padding:22px}
+.price{font-size:44px;font-weight:900;letter-spacing:-.055em;line-height:1;color:var(--orange)}
+.price span{font-size:15px;color:var(--muted);font-weight:800;letter-spacing:0}
+.summary{overflow:hidden}
+.summary-head{background:var(--navy);color:#fff;padding:22px 24px}
+.summary-head h3{color:#fff;font-size:26px}
+.summary-head p{font-size:12px;color:rgba(255,255,255,.72);margin-top:5px}
+.summary-row{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:17px 24px;border-bottom:1px solid var(--line)}
+.summary-row.total{background:#fff1d1}
+.summary-label b{display:block;font-size:14px}
+.summary-label small{display:block;font-size:12.5px;line-height:1.55;color:var(--muted);margin-top:4px}
+.summary-val{font-size:26px;font-weight:900;white-space:nowrap;text-align:right;letter-spacing:-.04em;color:var(--navy)}
+.payment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.pay{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--soft)}
+.pay.pct{font-size:42px;font-weight:900;color:var(--orange);line-height:1}
+.pay b{display:block;color:var(--navy);margin:8px 0 4px}
+.pay span{font-size:13.5px;color:var(--muted)}
+.date-box{padding:22px}
+.date-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.date-pill{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;min-height:86px}
+.date-pill b{display:block;color:var(--navy);font-size:16px}
+.date-pill span{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.date-pill small{display:block;color:var(--orange);font-size:11px;font-weight:900;margin-top:6px}
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--soft);overflow:hidden}
+summary{cursor:pointer;padding:20px 24px;font-weight:900;background:var(--navy);color:#fff;list-style:none}
+summary::-webkit-details-marker{display:none}
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step.n{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--navy);font-weight:900;margin-bottom:14px}
+.cta{background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 64%,#372b1e 100%);color:#fff;text-align:center}
+.cta h2{color:#fff;margin:auto}
+.cta p{color:rgba(255,255,255,.82);font-size:15.5px;line-height:1.8;max-width:790px;margin:16px auto 28px}
+footer{padding:34px 0;background:var(--navy2);color:#fff}
+.footer{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;flex-wrap:wrap}
+footer small{font-size:11px;color:rgba(255,255,255,.56);line-height:1.65}
+.fade{opacity:0;transform:translateY(18px);transition:.5s ease}
+.fade.in{opacity:1;transform:none}
+@media(max-width:980px){
+ .hero-grid,.grid-2,.route{grid-template-columns:1fr}
+ .grid-3,.grid-4,.price-grid,.payment-grid,.flow{grid-template-columns:repeat(2,1fr)}
+ .date-grid{grid-template-columns:repeat(3,1fr)}
+ .arrow{transform:rotate(90deg);height:40px}
+ .hero-card{max-width:760px;margin:auto}
+}
+@media(max-width:760px){
+ .topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 14px}
+ .brand{width:100%;white-space:normal;line-height:1.15;font-size:13.5px}
+ .brand-mark{width:34px;height:34px;flex:0 0 34px}
+ .nav{width:100%;overflow-x:auto;flex-wrap:nowrap;gap:6px;scrollbar-width:none}
+ .nav::-webkit-scrollbar{display:none}
+ .nav a{flex:0 0 auto;font-size:11px;padding:7px 10px}
+ .hero{padding:34px 0 42px}
+ h1{font-size:clamp(32px,10.4vw,42px);line-height:1.02}
+ h2{font-size:clamp(27px,8.2vw,35px);line-height:1.06}
+ .lead,.section-lead{font-size:14px;line-height:1.68}
+ .hero-actions{display:none}
+ .section,.section-tight{padding:42px 0}
+ .grid-3,.grid-4,.price-grid,.payment-grid,.flow,.date-grid{grid-template-columns:1fr;gap:12px}
+ .card,.step,.date-box{padding:17px;border-radius:20px}
+ .hero-card{border-radius:20px}
+ .hero-card img{height:170px}
+ .hero-caption{padding:14px}
+ .price{font-size:36px}
+ .summary-row{flex-direction:column;align-items:flex-start;padding:15px 18px}
+ .summary-val{white-space:normal;text-align:left;font-size:22px}
+ .cta{text-align:left}
+ .cta.btn{width:100%;border-radius:15px}
+}
+@media(max-width:390px){
+ .wrap{padding-left:13px;padding-right:13px}
+ h1{font-size:31px}
+ h2{font-size:26px}
+ .brand{font-size:12.8px}
+}
+
+/* DIREÇÃO DE ARTE FINAL — GLAM TEATRO / PRODUÇÃO PREMIUM */
+:root{
+ --navy:#0b0a10;
+ --navy2:#050409;
+ --gold:#c9a35a;
+ --gold2:#ead7aa;
+ --orange:#8b1e3f;
+ --cream:#f8f1e8;
+ --paper:#fffaf3;
+ --ink:#1b1413;
+ --muted:#6b5d5a;
+ --line:#e5d2b8;
+ --green:#8b1e3f;
+ --red:#8b1e3f;
+ --shadow:0 30px 82px rgba(11,10,16,.24);
+ --soft:0 16px 38px rgba(27,20,19,.09);
+}
+body{
+ background:
+  radial-gradient(circle at 82% 0%,rgba(201,163,90,.22),transparent 28%),
+  radial-gradient(circle at 8% 18%,rgba(139,30,63,.11),transparent 26%),
+  linear-gradient(180deg,#fffdf8 0%,#f8f1e8 52%,#efe1d1 100%) !important;
+}
+.topbar{
+ background:rgba(255,253,248,.90) !important;
+ border-bottom:1px solid rgba(201,163,90,.22) !important;
+ box-shadow:0 10px 30px rgba(11,10,16,.05);
+}
+.brand-mark{
+ background:linear-gradient(135deg,#0b0a10,#261927 60%,#8b1e3f) !important;
+ color:#ead7aa !important;
+}
+.nav.primary,.btn-primary{
+ background:linear-gradient(135deg,#0b0a10,#3a2031 55%,#8b1e3f) !important;
+ color:#fff !important;
+ box-shadow:0 18px 38px rgba(139,30,63,.20) !important;
+}
+.cta.btn-primary{
+ background:linear-gradient(135deg,#c9a35a,#ead7aa) !important;
+ color:#111 !important;
+}
+.hero{
+ background:
+  linear-gradient(90deg,rgba(255,250,243,.90) 0%,rgba(255,250,243,.58) 48%,rgba(139,30,63,.05) 100%);
+ position:relative;
+}
+.hero:after{
+ content:"";
+ position:absolute;
+ right:-120px;
+ top:20px;
+ width:360px;
+ height:360px;
+ border-radius:50%;
+ background:radial-gradient(circle,rgba(201,163,90,.14),rgba(201,163,90,0) 68%);
+ pointer-events:none;
+}
+.kicker,.place-content small,.date-pill small{
+ color:#8b1e3f !important;
+}
+.kicker:before{
+ background:#c9a35a !important;
+}
+.hero h1 span,.price,.pay.pct{
+ color:#8b1e3f !important;
+}
+.badge{
+ background:rgba(255,250,243,.84) !important;
+ border:1px solid rgba(201,163,90,.45) !important;
+ box-shadow:0 10px 28px rgba(11,10,16,.05);
+}
+.hero-card,.place,.card,.price-card,.summary,.step,.date-box,.pay{
+ background:rgba(255,250,243,.96) !important;
+ box-shadow:0 18px 44px rgba(11,10,16,.10) !important;
+}
+.hero-caption{
+ background:linear-gradient(135deg,#0b0a10 0%,#271625 55%,#8b1e3f 100%) !important;
+}
+.summary-head,summary{
+ background:linear-gradient(135deg,#0b0a10,#241525 72%,#4b1830) !important;
+}
+.price-head{
+ background:linear-gradient(135deg,#f7ecd9,#fffaf3) !important;
+ color:#0b0a10 !important;
+}
+.icon{
+ background:linear-gradient(135deg,#f7ecd9,#fffaf3) !important;
+ color:#8b1e3f !important;
+ border:1px solid rgba(201,163,90,.24);
+}
+.summary-row.total{
+ background:linear-gradient(135deg,#f7ecd9,#fffaf3) !important;
+}
+.cta{
+ background:
+  radial-gradient(circle at 20% 0%,rgba(201,163,90,.20),transparent 32%),
+  linear-gradient(135deg,#050409 0%,#11101a 48%,#4b1830 100%) !important;
+}
+.note,.notice,.warning{
+ border-left-color:#c9a35a !important;
+}
+
+
+/* TAG COMERCIAL — PAGAMENTO À VISTA */
+.cash-tag{
+ display:inline-flex;
+ align-items:center;
+ gap:10px;
+ width:fit-content;
+ max-width:100%;
+ padding:10px 14px;
+ border-radius:999px;
+ background:linear-gradient(135deg,#c9a35a,#ead7aa);
+ color:#111;
+ font-size:12px;
+ font-weight:900;
+ letter-spacing:.04em;
+ text-transform:uppercase;
+ box-shadow:0 14px 32px rgba(201,163,90,.25);
+ margin-bottom:14px;
+}
+.cash-card{
+ margin-top:20px;
+ background:linear-gradient(135deg,#0b0a10 0%,#211522 52%,#5b1832 100%);
+ color:#fff;
+ border:1px solid rgba(201,163,90,.45);
+ border-radius:28px;
+ box-shadow:0 24px 62px rgba(11,10,16,.22);
+ overflow:hidden;
+}
+.cash-card-inner{
+ display:grid;
+ grid-template-columns:1.05fr.95fr;
+ gap:20px;
+ align-items:center;
+ padding:24px;
+}
+.cash-card h3{color:#fff;font-size:28px;margin-bottom:8px}
+.cash-card p{color:rgba(255,255,255,.76);font-size:14px;line-height:1.7}
+.cash-value{
+ background:rgba(255,255,255,.08);
+ border:1px solid rgba(255,255,255,.14);
+ border-radius:22px;
+ padding:20px;
+}
+.cash-value small{display:block;color:rgba(255,255,255,.62);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.10em;margin-bottom:6px}
+.cash-value strong{display:block;color:#ead7aa;font-size:42px;line-height:1;letter-spacing:-.055em}
+.cash-value span{display:block;color:rgba(255,255,255,.72);font-size:13px;margin-top:10px;line-height:1.55}
+@media(max-width:760px){
+ .cash-card-inner{grid-template-columns:1fr;padding:18px}
+ .cash-card h3{font-size:23px}
+ .cash-value strong{font-size:34px}
+}
+
+
+/* DIRETOR DE MARKETING — AUTORIDADE, PROVA E FECHAMENTO */
+.authority-band{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:18px;
+  align-items:stretch;
+}
+.authority-card{
+  background:linear-gradient(135deg,#0b0a10 0%,#17131d 58%,#4f172e 100%);
+  color:#fff;
+  border:1px solid rgba(201,163,90,.44);
+  border-radius:28px;
+  box-shadow:0 24px 62px rgba(11,10,16,.22);
+  padding:26px;
+}
+.authority-card h3{color:#fff;font-size:30px;margin-bottom:10px}
+.authority-card p{color:rgba(255,255,255,.78);font-size:14.5px;line-height:1.75}
+.authority-list{display:grid;gap:10px}
+.authority-item{
+  background:rgba(255,250,243,.96);
+  border:1px solid var(--line);
+  border-radius:20px;
+  box-shadow:var(--soft);
+  padding:17px 18px;
+}
+.authority-item b{display:block;color:var(--navy);font-size:15px;margin-bottom:4px}
+.authority-item span{display:block;color:var(--muted);font-size:13.5px;line-height:1.6}
+.value-stack{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.value-box{
+  background:#fffaf3;
+  border:1px solid var(--line);
+  border-radius:20px;
+  box-shadow:var(--soft);
+  padding:18px;
+}
+.value-box strong{display:block;color:#8b1e3f;font-size:24px;line-height:1;margin-bottom:9px}
+.value-box b{display:block;color:var(--navy);font-size:14px;margin-bottom:5px}
+.value-box span{display:block;color:var(--muted);font-size:13px;line-height:1.55}
+.director-note{
+  background:#fffaf3;
+  border:1px solid rgba(201,163,90,.48);
+  border-left:4px solid #8b1e3f;
+  border-radius:0 20px 20px 0;
+  padding:18px 20px;
+  color:var(--muted);
+  font-size:14.5px;
+  line-height:1.72;
+  margin-top:18px;
+}
+@media(max-width:980px){
+  .authority-band{grid-template-columns:1fr}
+  .value-stack{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .value-stack{grid-template-columns:1fr}
+  .authority-card{padding:20px}
+  .authority-card h3{font-size:24px}
+}
+
+
+/* SEÇÃO FINAL — DÚVIDAS RESPONDIDAS PARA FECHAMENTO */
+.ops-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:18px;
+}
+.ops-item{
+  background:rgba(255,250,243,.96);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:18px;
+  box-shadow:var(--soft);
+}
+.ops-item b{
+  display:block;
+  color:var(--navy);
+  font-size:15px;
+  margin-bottom:6px;
+}
+.ops-item span{
+  display:block;
+  color:var(--muted);
+  font-size:13.5px;
+  line-height:1.58;
+}
+.ops-item .mark{
+  width:34px;
+  height:34px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,#c9a35a,#ead7aa);
+  color:#111;
+  font-size:13px;
+  font-weight:900;
+  margin-bottom:12px;
+}
+.choice-box{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.choice{
+  background:#fffaf3;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:20px;
+  box-shadow:var(--soft);
+}
+.choice.recommended{
+  background:linear-gradient(135deg,#0b0a10 0%,#1b1320 55%,#5b1832 100%);
+  border-color:rgba(201,163,90,.48);
+  color:#fff;
+}
+.choice.recommended b,.choice.recommended strong{color:#ead7aa}
+.choice.recommended span{color:rgba(255,255,255,.76)}
+.choice b{
+  display:block;
+  color:var(--navy);
+  font-size:16px;
+  margin-bottom:6px;
+}
+.choice strong{
+  display:block;
+  color:#8b1e3f;
+  font-size:30px;
+  line-height:1;
+  letter-spacing:-.04em;
+  margin-bottom:8px;
+}
+.choice span{
+  display:block;
+  color:var(--muted);
+  font-size:13.5px;
+  line-height:1.62;
+}
+@media(max-width:980px){
+  .ops-grid{grid-template-columns:repeat(2,1fr)}
+  .choice-box{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .ops-grid{grid-template-columns:1fr}
+}
+
+
+/* SEÇÃO INSTITUCIONAL — OSASCO EXPRESS */
+.company-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  align-items:stretch;
+}
+.company-hero{
+  background:linear-gradient(135deg,#0b0a10 0%,#19131d 52%,#5b1832 100%);
+  color:#fff;
+  border:1px solid rgba(201,163,90,.46);
+  border-radius:28px;
+  padding:28px;
+  box-shadow:0 24px 62px rgba(11,10,16,.22);
+}
+.company-hero h3{
+  color:#fff;
+  font-size:32px;
+  margin-bottom:10px;
+}
+.company-hero p{
+  color:rgba(255,255,255,.78);
+  font-size:14.5px;
+  line-height:1.74;
+}
+.company-stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:18px;
+}
+.stat{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:20px;
+  padding:18px;
+}
+.stat strong{
+  display:block;
+  color:#ead7aa;
+  font-size:34px;
+  line-height:1;
+  letter-spacing:-.05em;
+}
+.stat span{
+  display:block;
+  color:rgba(255,255,255,.72);
+  font-size:12.5px;
+  line-height:1.45;
+  margin-top:8px;
+}
+.company-card{
+  background:rgba(255,250,243,.96);
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:var(--soft);
+}
+.company-card h3{
+  margin-bottom:12px;
+}
+.company-line{
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+}
+.company-line:last-child{
+  border-bottom:0;
+}
+.company-line small{
+  display:block;
+  color:#8b1e3f;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-bottom:4px;
+}
+.company-line b{
+  display:block;
+  color:var(--navy);
+  font-size:14.5px;
+  line-height:1.45;
+}
+@media(max-width:900px){
+  .company-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .company-stats{grid-template-columns:1fr}
+  .company-hero,.company-card{padding:20px}
+  .company-hero h3{font-size:25px}
+  .stat strong{font-size:30px}
+}
+
+
+/* COPY ESTRATÉGICA — 8 Ps DO MARKETING SEM RUÍDO INTERNO */
+.marketing-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:18px;
+}
+.marketing-card{
+  background:rgba(255,250,243,.96);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:18px;
+  box-shadow:var(--soft);
+}
+.marketing-card small{
+  display:inline-flex;
+  padding:6px 10px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#c9a35a,#ead7aa);
+  color:#111;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.marketing-card b{
+  display:block;
+  color:var(--navy);
+  font-size:15px;
+  margin-bottom:6px;
+}
+.marketing-card span{
+  display:block;
+  color:var(--muted);
+  font-size:13.4px;
+  line-height:1.58;
+}
+.close-banner{
+  margin-top:20px;
+  background:linear-gradient(135deg,#0b0a10 0%,#19131d 54%,#5b1832 100%);
+  color:#fff;
+  border:1px solid rgba(201,163,90,.44);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:0 24px 62px rgba(11,10,16,.22);
+}
+.close-banner h3{
+  color:#fff;
+  font-size:28px;
+  margin-bottom:8px;
+}
+.close-banner p{
+  color:rgba(255,255,255,.78);
+  font-size:14.5px;
+  line-height:1.7;
+}
+.close-banner strong{
+  color:#ead7aa;
+}
+@media(max-width:980px){
+  .marketing-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .marketing-grid{grid-template-columns:1fr}
+  .close-banner{padding:20px}
+  .close-banner h3{font-size:23px}
+}
+
+
+/* FECHAMENTO FINAL — OPERAÇÃO NO DIA, RESPONSABILIDADES E NÃO INCLUSO */
+.final-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:18px;
+}
+.final-step{
+  background:rgba(255,250,243,.96);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:18px;
+  box-shadow:var(--soft);
+}
+.final-step .num{
+  width:36px;
+  height:36px;
+  border-radius:13px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,#c9a35a,#ead7aa);
+  color:#111;
+  font-size:13px;
+  font-weight:900;
+  margin-bottom:12px;
+}
+.final-step b{
+  display:block;
+  color:var(--navy);
+  font-size:15px;
+  margin-bottom:6px;
+}
+.final-step span{
+  display:block;
+  color:var(--muted);
+  font-size:13.5px;
+  line-height:1.58;
+}
+.resp-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:18px;
+}
+.resp-card{
+  background:rgba(255,250,243,.96);
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:22px;
+  box-shadow:var(--soft);
+}
+.resp-card h3{
+  margin-bottom:12px;
+}
+.resp-list{
+  display:grid;
+  gap:9px;
+}
+.resp-list div{
+  display:flex;
+  gap:9px;
+  align-items:flex-start;
+  color:var(--muted);
+  font-size:13.5px;
+  line-height:1.55;
+}
+.resp-list div:before{
+  content:"✓";
+  flex:0 0 20px;
+  width:20px;
+  height:20px;
+  border-radius:999px;
+  display:grid;
+  place-items:center;
+  background:#f3e4c8;
+  color:#8b1e3f;
+  font-size:11px;
+  font-weight:900;
+}
+.not-included{
+  background:linear-gradient(135deg,#0b0a10 0%,#19131d 56%,#4b1830 100%);
+  color:#fff;
+  border:1px solid rgba(201,163,90,.45);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:0 24px 62px rgba(11,10,16,.22);
+  margin-top:18px;
+}
+.not-included h3{
+  color:#fff;
+  margin-bottom:12px;
+}
+.not-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+.not-grid div{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:16px;
+  padding:13px;
+  color:rgba(255,255,255,.80);
+  font-size:13px;
+  line-height:1.5;
+}
+.condition-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:18px;
+}
+.condition-card{
+  background:rgba(255,250,243,.96);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:22px;
+  box-shadow:var(--soft);
+}
+.condition-card.hot{
+  background:linear-gradient(135deg,#0b0a10 0%,#19131d 56%,#5b1832 100%);
+  color:#fff;
+  border-color:rgba(201,163,90,.50);
+}
+.condition-card small{
+  display:inline-flex;
+  padding:6px 10px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#c9a35a,#ead7aa);
+  color:#111;
+  font-size:10px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  margin-bottom:12px;
+}
+.condition-card b{
+  display:block;
+  color:var(--navy);
+  font-size:15px;
+  margin-bottom:8px;
+}
+.condition-card.hot b{color:#fff}
+.condition-card strong{
+  display:block;
+  color:#8b1e3f;
+  font-size:34px;
+  line-height:1;
+  letter-spacing:-.05em;
+  margin-bottom:8px;
+}
+.condition-card.hot strong{color:#ead7aa}
+.condition-card span{
+  display:block;
+  color:var(--muted);
+  font-size:13.5px;
+  line-height:1.6;
+}
+.condition-card.hot span{color:rgba(255,255,255,.76)}
+@media(max-width:980px){
+  .final-grid,.condition-grid{grid-template-columns:repeat(2,1fr)}
+  .not-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .final-grid,.resp-grid,.condition-grid,.not-grid{grid-template-columns:1fr}
+}
+
+
+/* AI CONVERSION ARCHITECT — ORGANIZAÇÃO DAS DOBRAS */
+.decision-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:18px;
+}
+.decision-card{
+  background:rgba(255,250,243,.96);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:18px;
+  box-shadow:var(--soft);
+}
+.decision-card.featured{
+  background:linear-gradient(135deg,#0b0a10 0%,#19131d 56%,#5b1832 100%);
+  border-color:rgba(201,163,90,.50);
+  color:#fff;
+}
+.decision-card small{
+  display:inline-flex;
+  padding:6px 10px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#c9a35a,#ead7aa);
+  color:#111;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.decision-card b{
+  display:block;
+  color:var(--navy);
+  font-size:16px;
+  margin-bottom:6px;
+}
+.decision-card.featured b{color:#ead7aa}
+.decision-card span{
+  display:block;
+  color:var(--muted);
+  font-size:13.4px;
+  line-height:1.58;
+}
+.decision-card.featured span{color:rgba(255,255,255,.76)}
+@media(max-width:980px){
+  .decision-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .decision-grid{grid-template-columns:1fr}
+}
+
+
+/* UX PRODUCTER + RESPONSIVO FINAL — PUBLICAÇÃO */
+html,body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+*{
+  min-width:0;
+}
+.wrap,.topbar-inner{
+  max-width:100%;
+}
+img,video,iframe,svg{
+  max-width:100%;
+  height:auto;
+}
+body{
+  text-rendering:optimizeLegibility;
+}
+.topbar{
+  z-index:100;
+}
+.nav{
+  min-width:0;
+}
+.nav a{
+  white-space:nowrap;
+}
+.hero-grid{
+  align-items:center;
+}
+.hero-card img{
+  object-position:center;
+}
+.section-head{
+  max-width:880px;
+}
+.price,.summary-val,.condition-card strong,.cash-value strong,.stat strong{
+  overflow-wrap:anywhere;
+}
+.btn{
+  line-height:1.2;
+}
+.card,.price-card,.summary,.step,.date-box,.place,.pay,.company-card,.authority-item,.marketing-card,.decision-card,.final-step,.resp-card,.condition-card{
+  max-width:100%;
+}
+
+/* Desktop comum e notebook */
+@media(min-width:981px) and (max-width:1380px){
+  .wrap{
+    width:min(1080px,100%);
+  }
+  .hero{
+    padding:58px 0 54px;
+  }
+  .hero-grid{
+    grid-template-columns:minmax(0,.92fr) minmax(340px,1.08fr);
+    gap:42px;
+  }
+  h1{
+    font-size:clamp(42px,4.25vw,58px);
+    max-width:660px;
+  }
+  h2{
+    font-size:clamp(30px,3.8vw,46px);
+  }
+  .lead{
+    font-size:15.8px;
+    line-height:1.68;
+  }
+  .hero-card img{
+    height:235px;
+  }
+  .section{
+    padding:64px 0;
+  }
+  .section-tight{
+    padding:46px 0;
+  }
+}
+
+/* Tablet */
+@media(max-width:980px){
+  .topbar-inner{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:10px;
+  }
+  .brand{
+    width:100%;
+    white-space:normal;
+    line-height:1.15;
+  }
+  .nav{
+    width:100%;
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    gap:6px;
+    padding-bottom:3px;
+    scrollbar-width:none;
+  }
+  .nav::-webkit-scrollbar{
+    display:none;
+  }
+  .nav a{
+    flex:0 0 auto;
+    font-size:11.5px;
+    padding:7px 10px;
+  }
+  .hero-grid,.grid-2,.route,.company-grid,.authority-band,.resp-grid{
+    grid-template-columns:1fr !important;
+  }
+  .hero-card{
+    max-width:760px;
+    margin:auto;
+  }
+  .grid-3,.grid-4,.price-grid,.payment-grid,.flow,.marketing-grid,.decision-grid,.final-grid,.condition-grid,.value-stack,.ops-grid{
+    grid-template-columns:repeat(2,1fr) !important;
+  }
+  .date-grid{
+    grid-template-columns:repeat(3,1fr) !important;
+  }
+  .not-grid{
+    grid-template-columns:repeat(2,1fr) !important;
+  }
+  .arrow{
+    transform:rotate(90deg);
+    min-height:38px;
+  }
+}
+
+/* Celular */
+@media(max-width:760px){
+  .topbar-inner{
+    padding:10px 14px;
+  }
+  .brand{
+    font-size:13.5px;
+  }
+  .brand-mark{
+    width:34px;
+    height:34px;
+    flex:0 0 34px;
+    border-radius:11px;
+  }
+  .nav a{
+    font-size:10.8px;
+    padding:7px 9px;
+  }
+  .hero{
+    padding:34px 0 40px;
+  }
+  .badge{
+    font-size:11px;
+    line-height:1.3;
+    padding:9px 12px;
+    margin-bottom:14px;
+  }
+  .kicker{
+    font-size:10px;
+    letter-spacing:.13em;
+    margin-bottom:10px;
+  }
+  .kicker:before{
+    width:22px;
+    height:2px;
+  }
+  h1{
+    font-size:clamp(31px,10.4vw,41px);
+    line-height:1.02;
+    letter-spacing:-.055em;
+    max-width:100%;
+  }
+  h2{
+    font-size:clamp(26px,8.4vw,34px);
+    line-height:1.06;
+    letter-spacing:-.052em;
+  }
+  h3{
+    font-size:20px;
+    line-height:1.12;
+  }
+  .lead,.section-lead{
+    font-size:14px;
+    line-height:1.66;
+    margin-top:13px;
+  }
+  .hero-actions{
+    display:none;
+  }
+  .hero-card{
+    border-radius:20px;
+  }
+  .hero-card-grid{
+    grid-template-columns:1fr 1fr;
+  }
+  .hero-card img{
+    height:150px;
+  }
+  .hero-caption{
+    padding:14px;
+  }
+  .hero-caption b{
+    font-size:17px;
+  }
+  .hero-caption span{
+    font-size:12.5px;
+  }
+  .section,.section-tight{
+    padding:40px 0;
+  }
+  .section-head{
+    margin-bottom:20px;
+  }
+  .grid-3,.grid-4,.price-grid,.payment-grid,.flow,.marketing-grid,.decision-grid,.final-grid,.condition-grid,.value-stack,.ops-grid,.date-grid,.not-grid,.company-stats{
+    grid-template-columns:1fr !important;
+    gap:12px;
+  }
+  .card,.step,.date-box,.company-hero,.company-card,.authority-card,.authority-item,.marketing-card,.decision-card,.final-step,.resp-card,.condition-card,.not-included,.close-banner{
+    padding:17px;
+    border-radius:20px;
+  }
+  .icon{
+    width:40px;
+    height:40px;
+    border-radius:14px;
+    margin-bottom:12px;
+  }
+  .place{
+    border-radius:20px;
+  }
+  .place img{
+    height:170px;
+  }
+  .place-content{
+    padding:16px;
+  }
+  .price-card,.summary,.cash-card{
+    border-radius:20px;
+  }
+  .price-head{
+    padding:13px 15px;
+    font-size:11.5px;
+    line-height:1.25;
+  }
+  .price-body{
+    padding:17px;
+  }
+  .price{
+    font-size:34px;
+  }
+  .summary-head{
+    padding:18px;
+  }
+  .summary-head h3{
+    font-size:22px;
+  }
+  .summary-row{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:15px 18px;
+  }
+  .summary-val{
+    text-align:left;
+    white-space:normal;
+    font-size:21px;
+  }
+  .cash-card-inner{
+    grid-template-columns:1fr !important;
+    padding:18px;
+  }
+  .cash-card h3,.close-banner h3,.authority-card h3,.company-hero h3{
+    font-size:23px;
+  }
+  .cash-value strong,.condition-card strong{
+    font-size:32px;
+  }
+  .pay .pct,.stat strong{
+    font-size:30px;
+  }
+  .date-pill{
+    min-height:auto;
+  }
+  .date-pill b{
+    font-size:15px;
+  }
+  .date-pill span,.date-pill small{
+    font-size:11.5px;
+  }
+  .not-grid div{
+    font-size:12.8px;
+  }
+  .cta{
+    text-align:left;
+  }
+  .cta .wrap{
+    padding-left:18px;
+    padding-right:18px;
+  }
+  .cta p{
+    font-size:14px;
+    line-height:1.66;
+    margin:14px 0 22px;
+  }
+  .cta .btn{
+    width:100%;
+    border-radius:15px;
+  }
+  footer{
+    padding:28px 0 24px;
+  }
+  .footer{
+    align-items:flex-start;
+  }
+}
+
+/* Celular pequeno */
+@media(max-width:390px){
+  .wrap{
+    padding-left:13px;
+    padding-right:13px;
+  }
+  h1{
+    font-size:30px;
+  }
+  h2{
+    font-size:25px;
+  }
+  .brand{
+    font-size:12.8px;
+  }
+  .nav a{
+    font-size:10.3px;
+    padding:7px 8px;
+  }
+  .hero-card-grid{
+    grid-template-columns:1fr;
+  }
+  .hero-card img{
+    height:150px;
+  }
+  .price{
+    font-size:31px;
+  }
+  .summary-val{
+    font-size:20px;
+  }
+}
+
+/* Acessibilidade visual */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .fade{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+
+
+/* AJUSTE FINAL HERO — GANCHO CURTO E PROPORÇÃO PREMIUM */
+@media(min-width:981px){
+  .hero{
+    padding:56px 0 54px !important;
+  }
+  .hero-grid{
+    grid-template-columns:minmax(0,.86fr) minmax(420px,1.14fr) !important;
+    gap:clamp(42px,5vw,76px) !important;
+  }
+  .hero h1,
+  h1{
+    font-size:clamp(44px,4.05vw,58px) !important;
+    line-height:.98 !important;
+    max-width:560px !important;
+    letter-spacing:-.055em !important;
+  }
+  .lead{
+    max-width:590px !important;
+    font-size:15.8px !important;
+    line-height:1.72 !important;
+  }
+  .hero-card{
+    max-width:620px !important;
+    margin-left:auto !important;
+  }
+  .hero-card img{
+    height:245px !important;
+  }
+  .hero-caption b{
+    font-size:20px !important;
+  }
+}
+@media(max-width:760px){
+  .hero h1,
+  h1{
+    font-size:clamp(32px,10vw,40px) !important;
+    max-width:100% !important;
+  }
+}
+
+
+/* IMAGEM HERO OSASCO EXPRESS — AJUSTE FINAL */
+.hero-card-grid img:first-child{
+  object-position:center;
+}
+@media(min-width:981px){
+  .hero-card-grid img:first-child{
+    object-position:center;
+  }
+}
+@media(max-width:390px){
+  .hero-card-grid img:first-child{
+    object-position:center;
+  }
+}
+
+
+/* HERO FINAL — IMAGEM ÚNICA NO LADO DIREITO */
+.hero-card-single{
+  position:relative;
+  min-height:100%;
+  max-width:100%;
+}
+.hero-main-image{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:420px;
+  aspect-ratio:16/11;
+  object-fit:cover;
+  object-position:center;
+}
+.hero-caption-overlay{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:24px 24px 22px;
+  background:linear-gradient(180deg, rgba(15,9,14,0) 0%, rgba(15,9,14,.76) 52%, rgba(62,20,40,.94) 100%);
+  color:#fff;
+}
+.hero-caption-overlay small{
+  display:inline-flex;
+  margin-bottom:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.18);
+  color:rgba(255,255,255,.84);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.hero-caption-overlay b{
+  display:block;
+  color:#fff;
+  font-size:clamp(24px,2vw,30px);
+  line-height:1.06;
+  letter-spacing:-.04em;
+}
+.hero-caption-overlay span{
+  display:block;
+  margin-top:8px;
+  color:rgba(255,255,255,.82);
+  font-size:14px;
+  line-height:1.55;
+}
+@media(min-width:981px){
+  .hero-grid{
+    align-items:stretch !important;
+    grid-template-columns:minmax(0,.86fr) minmax(440px,1.14fr) !important;
+  }
+  .hero-card-single{
+    height:100%;
+  }
+  .hero-main-image{
+    min-height:470px;
+  }
+}
+@media(max-width:760px){
+  .hero-main-image{
+    min-height:260px;
+    aspect-ratio:4/3;
+  }
+  .hero-caption-overlay{
+    padding:18px 16px 16px;
+  }
+  .hero-caption-overlay b{
+    font-size:22px;
+  }
+  .hero-caption-overlay span{
+    font-size:13px;
+  }
+}
+
+
+/* CORREÇÃO FINAL DO HERO — FOTO ÚNICA NO LADO DIREITO */
+.hero-card-single{
+  position:relative;
+  overflow:hidden;
+  border-radius:34px;
+  background:#0b0a10;
+  border:1px solid rgba(201,163,90,.42);
+  box-shadow:0 28px 78px rgba(11,10,16,.24);
+}
+.hero-card-single > img{
+  width:100%;
+  height:clamp(390px,42vw,560px);
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+.hero-card-single .hero-caption{
+  position:absolute;
+  left:18px;
+  right:18px;
+  bottom:18px;
+  padding:16px 18px;
+  border-radius:20px;
+  background:linear-gradient(135deg,rgba(11,10,16,.90),rgba(91,24,50,.88));
+  border:1px solid rgba(201,163,90,.32);
+  backdrop-filter:blur(10px);
+}
+.hero-card-single .hero-caption b{
+  color:#fff;
+  display:block;
+  font-size:19px;
+  line-height:1.15;
+}
+.hero-card-single .hero-caption span{
+  color:rgba(255,255,255,.78);
+  font-size:12.5px;
+}
+@media(min-width:981px){
+  .hero-grid{
+    grid-template-columns:minmax(0,.86fr) minmax(430px,1.14fr) !important;
+  }
+  .hero-card-single{
+    max-width:640px;
+    margin-left:auto;
+  }
+}
+@media(max-width:760px){
+  .hero-card-single{
+    border-radius:22px;
+  }
+  .hero-card-single > img{
+    height:330px;
+  }
+  .hero-card-single .hero-caption{
+    position:relative;
+    left:auto;
+    right:auto;
+    bottom:auto;
+    border-radius:0;
+    background:linear-gradient(135deg,#0b0a10,#5b1832);
+  }
+}
+@media(max-width:390px){
+  .hero-card-single > img{
+    height:280px;
+  }
+}
+
+</style>
+</head>
+<body id="top">
+<nav class="topbar">
+ <div class="topbar-inner">
+  <a class="brand" href="#top"><span class="brand-mark">OE</span>Alegria Produções <em>×</em> Osasco Express</a>
+  
+
+<div class="nav">
+      <a href="#resumo">Resumo</a>
+      <a href="#valores">Valores</a>
+      <a href="#condicoes">Condição</a>
+      <a href="#operacao-dia">Operação</a>
+      <a href="#osasco-express">Empresa</a>
+      <a class="primary" href="#aceite">Aceite</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+ <div class="wrap hero-grid">
+  <div class="fade">
+   <div class="badge">Orçamento para ALEGRIA PRODUÇÕES ARTÍSTICAS LTDA</div>
+   <p class="kicker">Apoio/catering para temporada em São Paulo</p>
+   <h1>Apoio de catering <span>sem improviso.</span></h1>
+   <p class="lead">Para a temporada da Alegria Produções, a Osasco Express organiza a retirada dos lanches na Dona Deôla e a entrega em mãos no Teatro BTG Pactual Hall, com rota definida, comunicação operacional e contrato de prestação de serviço.</p>
+   <div class="hero-actions">
+    <a class="btn btn-primary" href="#valores">Ver orçamento</a>
+    <a class="btn btn-secondary" href="#cronograma">Ver datas consideradas</a>
+   </div>
+   <div class="note"><strong>Mais do que uma corrida:</strong> o valor considera retirada programada, tempo de espera previsto, entrega em mãos, comunicação operacional e entregador habilitado com mais de 2 anos de atuação com a Osasco Express.</div>
+  </div>
+  
+  <div class="hero-card hero-card-single fade">
+      <img src="assets/motoboy-osasco-express-avenida-paulista.png" alt="Entregador da Osasco Express em operação na Avenida Paulista">
+      <div class="hero-caption"><b>Osasco Express em operação.</b><span>Imagem institucional para reforçar presença, responsabilidade e execução logística.</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="section-tight light" id="resumo">
+  <div class="wrap">
+    <div class="section-head fade">
+      <p class="kicker">Resumo para decisão</p>
+      <h2>O pacote resolve 34 datas de apoio/catering com rota, entrega em mãos e contrato.</h2>
+      <p class="section-lead">A proposta foi reorganizada para decisão rápida: primeiro o que será contratado, depois o valor, depois como funciona a operação e por fim a formalização.</p>
+    </div>
+
+    <div class="decision-grid fade">
+      <div class="decision-card">
+        <small>Serviço</small>
+        <b>Retirada + entrega em mãos</b>
+        <span>Dona Deôla, R. Pio XI, 1377 → Teatro BTG Pactual Hall.</span>
+      </div>
+      <div class="decision-card">
+        <small>Pacote</small>
+        <b>34 datas confirmadas</b>
+        <span>Datas com atendimento indicado na planilha enviada.</span>
+      </div>
+      <div class="decision-card featured">
+        <small>Melhor condição</small>
+        <b>R$ 3.459,84 à vista</b>
+        <span>20% de desconto para aprovação do pacote completo.</span>
+      </div>
+      <div class="decision-card">
+        <small>Próximo passo</small>
+        <b>Aprovar e receber contrato</b>
+        <span>Contrato com escopo, datas, valores e regras operacionais.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-tight" id="osasco-express">
+  <div class="wrap">
+    <div class="section-head fade">
+      <p class="kicker">Quem executa a operação</p>
+      <h2>Osasco Express: operação logística com histórico, CNPJ e responsabilidade.</h2>
+      <p class="section-lead">Para uma produção com cronograma, alimentação e equipe aguardando, a escolha não pode depender de um contato improvisado. A proposta é formal, com empresa identificada, experiência operacional e contrato de prestação de serviço após o aceite.</p>
+    </div>
+
+    <div class="company-grid fade">
+      <div class="company-hero">
+        <h3>Não é uma entrega solta. É uma operação com empresa por trás.</h3>
+        <p>A Osasco Express atua na organização de entregas e operações logísticas locais, com rotina de atendimento, comunicação operacional e acompanhamento para reduzir improviso nos dias de execução.</p>
+        <div class="company-stats">
+          <div class="stat"><strong>4 anos</strong><span>de atuação no mercado de entregas e operação logística.</span></div>
+          <div class="stat"><strong>450 mil+</strong><span>entregas realizadas em operações acompanhadas pela Osasco Express.</span></div>
+        </div>
+      </div>
+
+      <div class="company-card">
+        <h3>Dados da Osasco Express</h3>
+        <div class="company-line"><small>Razão social</small><b>Osasco Express Serviços Ltda – ME</b></div>
+        <div class="company-line"><small>CNPJ</small><b>54.707.097/0001-04</b></div>
+        <div class="company-line"><small>Endereço operacional</small><b>Avenida Diogo Antônio Feijó, 8555, Km 18, Osasco/SP</b></div>
+        <div class="company-line"><small>Atuação</small><b>Gestão de entregas, apoio logístico e operação programada para empresas, restaurantes e demandas recorrentes.</b></div>
+      </div>
+    </div>
+
+    <div class="notice fade"><strong>Segurança para formalizar:</strong> após o aceite, o contrato de prestação de serviço será emitido com identificação das partes, escopo da operação, datas, valores, condição de pagamento e regras de execução.</div>
+  </div>
+</section>
+
+<section class="section-tight light" id="escopo">
+ <div class="wrap">
+  <div class="section-head fade">
+   <p class="kicker">Escopo do serviço</p>
+   <h2>Retirada e entrega programada de lanches para apoio de produção.</h2>
+   <p class="section-lead">O orçamento foi estruturado para uma operação recorrente, com rota definida, cronograma de datas e entrega em mãos no destino. A proposta não trata de delivery comum, mas de apoio logístico para produção artística.</p>
+  </div>
+
+  <div class="route fade">
+   <div class="place">
+    <img src="assets/dona-deola-pio-xi.jpg" alt="Dona Deôla">
+    <div class="place-content"><small>Retirada</small><h3>Dona Deôla | R. Pio XI, nº 1377</h3><p>Coleta dos lanches conforme horário operacional combinado.</p></div>
+   </div>
+   <div class="arrow">→</div>
+   <div class="place">
+    <img src="assets/teatro-btg-pactual-hall.jpg" alt="Teatro BTG Pactual Hall">
+    <div class="place-content"><small>Entrega em mãos</small><h3>Teatro BTG Pactual Hall</h3><p>R. Bento Branco de Andrade Filho, 722, Santo Amaro.</p></div>
+   </div>
+  </div>
+
+  <div class="grid-4" style="margin-top:18px">
+   <article class="card fade"><div class="icon">⏱</div><h3>Espera inclusa</h3><p>Até 25 minutos na coleta e até 30 minutos na entrega em mãos.</p></article>
+   <article class="card fade"><div class="icon">✓</div><h3>Entrega segura</h3><p>Operação com entregador habilitado e experiente na rotina da Osasco Express.</p></article>
+   <article class="card fade"><div class="icon">☎</div><h3>Comunicação</h3><p>Contato operacional para retirada, deslocamento, chegada e confirmação de entrega.</p></article>
+   <article class="card fade"><div class="icon">NF</div><h3>Nota fiscal</h3><p>Orçamento apresentado com valor final fechado para aceite.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section-tight light" id="proposta-completa">
+  <div class="wrap">
+    <div class="section-head fade">
+      <p class="kicker">Proposta organizada para decisão</p>
+      <h2>O serviço foi desenhado para a produção decidir sem dúvida.</h2>
+      <p class="section-lead">A proposta conecta o que será entregue, onde será executado, quem acompanha, como o preço funciona e qual é o próximo passo. Assim a decisão fica objetiva e a operação começa formalizada.</p>
+    </div>
+
+    <div class="marketing-grid fade">
+      <div class="marketing-card"><small>Serviço</small><b>Retirada + entrega em mãos</b><span>Coleta dos lanches na Dona Deôla, deslocamento até o teatro e entrega em mãos no ponto indicado.</span></div>
+      <div class="marketing-card"><small>Preço</small><b>Pacote com condição melhor</b><span>R$ 120 por dia ao fechar todas as 34 datas confirmadas. Data avulsa passa para R$ 180 por dia.</span></div>
+      <div class="marketing-card"><small>Rota</small><b>Origem e destino definidos</b><span>R. Pio XI, 1377 até Teatro BTG Pactual Hall, em Santo Amaro, conforme cronograma.</span></div>
+      <div class="marketing-card"><small>Comunicação</small><b>Acompanhamento operacional</b><span>Retirada, saída, chegada e entrega em mãos com comunicação para reduzir ruído no bastidor.</span></div>
+      <div class="marketing-card"><small>Pessoas</small><b>Entregador experiente</b><span>Profissional habilitado e com mais de dois anos de atuação junto à Osasco Express.</span></div>
+      <div class="marketing-card"><small>Processo</small><b>Espera prevista</b><span>Até 25 minutos na coleta e até 30 minutos para acesso, localização e entrega no teatro.</span></div>
+      <div class="marketing-card"><small>Formalização</small><b>Contrato após aceite</b><span>O aceite libera o contrato de prestação de serviço com escopo, datas, valores e condições.</span></div>
+      <div class="marketing-card"><small>Confiança</small><b>Empresa identificada</b><span>Osasco Express com CNPJ, endereço, 4 anos de mercado e mais de 450 mil entregas realizadas.</span></div>
+    </div>
+
+    <div class="close-banner fade">
+      <h3>O ganho real é tirar uma rotina do bastidor.</h3>
+      <p>A produção deixa de resolver transporte de lanche data por data e passa a ter um fluxo único para as 34 datas: <strong>rota definida, entrega em mãos, responsável indicado, valor fechado e contrato.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="valores">
+ <div class="wrap">
+  <div class="section-head fade">
+   <p class="kicker">Lógica do orçamento</p>
+   <h2>Valor fechado por operação quando o pacote completo é aprovado.</h2>
+   <p class="section-lead">O valor de R$ 120 considera o fechamento das datas confirmadas do cronograma. Solicitação avulsa de um único dia passa para R$ 180 por operação.</p>
+  </div>
+
+  <div class="price-grid fade">
+   <article class="price-card"><div class="price-head">Pacote completo</div><div class="price-body"><div class="price">R$ 120 <span>/operação</span></div><p>Coleta na Dona Deôla e entrega em mãos no teatro, conforme cronograma confirmado.</p></div></article>
+   <article class="price-card"><div class="price-head">Dia avulso</div><div class="price-body"><div class="price">R$ 180 <span>/operação</span></div><p>Aplicável quando a solicitação for isolada, fora do pacote de datas.</p></div></article>
+   <article class="price-card"><div class="price-head">Valor final</div><div class="price-body"><div class="price">Fechado</div><p>Os valores apresentados já estão organizados para formalização da proposta.</p></div></article>
+  </div>
+
+  <div class="summary fade" style="margin-top:20px">
+   <div class="summary-head"><h3>Orçamento principal</h3><p>Considerando as 34 operações confirmadas na planilha</p></div>
+   <div class="summary-row"><div class="summary-label"><b>34 operações programadas</b><small>34 × R$ 120,00</small></div><div class="summary-val">R$ 4.080,00</div></div>
+   <div class="summary-row total"><div class="summary-label"><b>Total geral da proposta</b><small>Valor para aceite do pacote confirmado</small></div><div class="summary-val">R$ 4.324,80</div></div>
+  </div>
+
+  <div class="cash-card fade">
+   <div class="cash-card-inner">
+    <div>
+     <div class="cash-tag">Melhor condição • pagamento à vista</div>
+     <h3>Aprovação à vista reduz o custo total do pacote.</h3>
+     <p>Condição comercial para aprovação do pacote completo das 34 datas confirmadas. O desconto reduz o custo final e permite seguir direto para a formalização do contrato de prestação de serviço.</p>
+    </div>
+    <div class="cash-value">
+     <small>Total à vista com 20% de desconto</small>
+     <strong>R$ 3.459,84</strong>
+     <span>Economia de R$ 864,96 sobre o total principal de R$ 4.324,80.</span>
+    </div>
+   </div>
+  </div>
+
+  <div class="warning fade"><strong>Datas a confirmar:</strong> a planilha possui 6 datas marcadas como “sessão a confirmar”. Elas não estão incluídas no total principal. Se forem confirmadas junto ao pacote completo, o valor final será recalculado mantendo a condição de pacote. Se forem solicitadas isoladamente depois, podem ser tratadas como operação avulsa.</div>
+ </div>
+</section>
+
+<section class="section-tight light" id="condicoes">
+  <div class="wrap">
+    <div class="section-head fade">
+      <p class="kicker">Condição comercial para decisão</p>
+      <h2>Escolha a forma de aprovação do pacote.</h2>
+      <p class="section-lead">O valor de pacote é válido para aprovação das 34 datas confirmadas. Data isolada ou fora do pacote segue a condição avulsa.</p>
+    </div>
+
+    <div class="condition-grid fade">
+      <div class="condition-card hot">
+        <small>Melhor condição</small>
+        <b>Pacote à vista</b>
+        <strong>R$ 3.459,84</strong>
+        <span>Valor com 20% de desconto para aprovação à vista das 34 datas confirmadas.</span>
+      </div>
+      <div class="condition-card">
+        <small>Pacote dividido</small>
+        <b>Condição 30 / 30 / 40</b>
+        <strong>R$ 4.324,80</strong>
+        <span>30% no aceite, 30% para 15 dias e 40% no término da demanda.</span>
+      </div>
+      <div class="condition-card">
+        <small>Data isolada</small>
+        <b>Acionamento avulso</b>
+        <strong>R$ 180/dia</strong>
+        <span>Aplicável para data única, inclusão posterior ou operação fora do pacote.</span>
+      </div>
+    </div>
+
+    <div class="warning fade"><strong>Datas a confirmar:</strong> as 6 datas marcadas como “sessão a confirmar” não fazem parte do valor principal. Se forem confirmadas junto ao pacote, o orçamento pode ser atualizado mantendo a lógica de pacote. Se forem solicitadas separadamente, será aplicada a condição avulsa.</div>
+  </div>
+</section>
+
+<section class="section-tight light" id="operacao-dia">
+  <div class="wrap">
+    <div class="section-head fade">
+      <p class="kicker">Como funciona no dia</p>
+      <h2>Um fluxo simples para a produção não precisar resolver tudo de novo a cada data.</h2>
+      <p class="section-lead">A operação foi pensada para reduzir ruído no bastidor: retirada no ponto combinado, comunicação durante o deslocamento e entrega em mãos ao responsável indicado no teatro.</p>
+    </div>
+
+    <div class="final-grid fade">
+      <div class="final-step"><div class="num">1</div><b>Chegada na Dona Deôla</b><span>O entregador chega ao local de retirada na R. Pio XI, 1377, conforme horário combinado.</span></div>
+      <div class="final-step"><div class="num">2</div><b>Retirada dos volumes</b><span>São retirados os volumes disponibilizados pelo fornecedor, com até 25 minutos de espera previstos para coleta e saída.</span></div>
+      <div class="final-step"><div class="num">3</div><b>Deslocamento acompanhado</b><span>A produção recebe comunicação operacional sobre retirada, saída e deslocamento até o teatro.</span></div>
+      <div class="final-step"><div class="num">4</div><b>Entrega em mãos</b><span>No BTG Pactual Hall, o entregador realiza a entrega em mãos ao responsável indicado pela produção.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" id="responsabilidades">
+  <div class="wrap">
+    <div class="section-head fade">
+      <p class="kicker">Responsabilidades</p>
+      <h2>Cada parte sabe exatamente o que precisa fazer.</h2>
+      <p class="section-lead">Essa separação evita dúvida no dia da operação e protege a execução do serviço.</p>
+    </div>
+
+    <div class="resp-grid fade">
+      <div class="resp-card">
+        <h3>Osasco Express</h3>
+        <div class="resp-list">
+          <div>Enviar entregador habilitado e experiente para a operação.</div>
+          <div>Realizar a retirada no local combinado.</div>
+          <div>Fazer o deslocamento até o Teatro BTG Pactual Hall.</div>
+          <div>Comunicar retirada, saída, chegada e entrega em mãos.</div>
+          <div>Executar a entrega ao responsável indicado pela produção.</div>
+        </div>
+      </div>
+
+      <div class="resp-card">
+        <h3>Produção / fornecedor</h3>
+        <div class="resp-list">
+          <div>Garantir que os lanches estejam prontos para retirada no horário combinado.</div>
+          <div>Disponibilizar os volumes separados no ponto de coleta.</div>
+          <div>Indicar responsável ou ponto de recebimento no teatro.</div>
+          <div>Informar mudanças de horário, endereço ou data com antecedência.</div>
+          <div>Validar datas a confirmar antes da formalização no contrato.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="not-included fade">
+      <h3>Não incluso no valor principal</h3>
+      <div class="not-grid">
+        <div>Retirada em endereço diferente da Dona Deôla da R. Pio XI.</div>
+        <div>Entrega em local diferente do Teatro BTG Pactual Hall.</div>
+        <div>Segunda viagem no mesmo dia.</div>
+        <div>Espera acima de 25 minutos na coleta.</div>
+        <div>Espera acima de 30 minutos para entrega em mãos.</div>
+        <div>Data extra ou data a confirmar sem validação prévia.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cronograma">
+ <div class="wrap">
+  <div class="section-head fade">
+   <p class="kicker">Cronograma considerado</p>
+   <h2>34 operações confirmadas no orçamento principal.</h2>
+   <p class="section-lead">Foram consideradas as datas que possuem indicação de atendimento para 40 ou 65 pessoas no cronograma. Datas em branco, sem sessão ou apenas “a confirmar” não entram no total principal.</p>
+  </div>
+  <div class="date-box fade">
+   <h3>Datas confirmadas consideradas</h3>
+   <div class="date-grid">
+    <div class="date-pill"><b>08/jun</b><span>Segunda-feira</span><small>40 pessoas • 15h</small></div>
+<div class="date-pill"><b>09/jun</b><span>Terça-feira</span><small>40 pessoas • 15h</small></div>
+<div class="date-pill"><b>10/jun</b><span>Quarta-feira</span><small>40 pessoas • 15h</small></div>
+<div class="date-pill"><b>11/jun</b><span>Quinta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>12/jun</b><span>Sexta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>14/jun</b><span>Domingo</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>15/jun</b><span>Segunda-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>16/jun</b><span>Terça-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>17/jun</b><span>Quarta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>18/jun</b><span>Quinta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>20/jun</b><span>Sábado</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>21/jun</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>23/jun</b><span>Terça-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>26/jun</b><span>Sexta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>27/jun</b><span>Sábado</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>28/jun</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>03/jul</b><span>Sexta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>04/jul</b><span>Sábado</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>05/jul</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>10/jul</b><span>Sexta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>11/jul</b><span>Sábado</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>12/jul</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>17/jul</b><span>Sexta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>18/jul</b><span>Sábado</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>19/jul</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>24/jul</b><span>Sexta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>25/jul</b><span>Sábado</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>26/jul</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>31/jul</b><span>Sexta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>01/ago</b><span>Sábado</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>02/ago</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>07/ago</b><span>Sexta-feira</span><small>65 pessoas • 15h</small></div>
+<div class="date-pill"><b>08/ago</b><span>Sábado</span><small>65 pessoas • 11h</small></div>
+<div class="date-pill"><b>09/ago</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
+   </div>
+  </div>
+
+  <details class="fade" style="margin-top:18px">
+   <summary>Ver datas a confirmar não inclusas</summary>
+   <div class="date-box" style="border:0;box-shadow:none;border-radius:0">
+    <p>Estas datas aparecem no cronograma como sessão a confirmar e só devem entrar no orçamento mediante confirmação.</p>
+    <div class="date-grid">
+     <div class="date-pill"><b>02/jul</b><span>Quinta-feira</span><small>operação</small></div>
+<div class="date-pill"><b>09/jul</b><span>Quinta-feira</span><small>operação</small></div>
+<div class="date-pill"><b>16/jul</b><span>Quinta-feira</span><small>operação</small></div>
+<div class="date-pill"><b>23/jul</b><span>Quinta-feira</span><small>operação</small></div>
+<div class="date-pill"><b>30/jul</b><span>Quinta-feira</span><small>operação</small></div>
+<div class="date-pill"><b>06/ago</b><span>Quinta-feira</span><small>operação</small></div>
+    </div>
+   </div>
+  </details>
+ </div>
+</section>
+
+<section class="section-tight light" id="contratante">
+ <div class="wrap">
+  <div class="section-head fade">
+   <p class="kicker">Dados para formalização</p>
+   <h2>Contratante informado para emissão e contrato.</h2>
+  </div>
+  <div class="grid-2 fade">
+   <div class="card"><h3>ALEGRIA PRODUÇÕES ARTÍSTICAS LTDA</h3><p><strong>CNPJ:</strong> 23.727.330/0001-89<br><strong>Inscrição estadual:</strong> Isento<br><strong>Inscrição municipal:</strong> 10013020</p></div>
+   <div class="card"><h3>Endereço fiscal</h3><p>R. Maria Angélica, 719, apto 201<br>Jardim Botânico, RJ<br>CEP: 22.461-151</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section-tight" id="inicio">
+ <div class="wrap">
+  <div class="section-head fade">
+   <p class="kicker">Como seguimos após o aceite</p>
+   <h2>Após o aceite, seguimos para formalização.</h2>
+   <p class="section-lead">Com o aceite, a Osasco Express envia o contrato de prestação de serviço para assinatura e organiza os contatos operacionais para as datas confirmadas.</p>
+  </div>
+  <div class="flow fade">
+   <div class="step"><div class="n">1</div><h3>Aceite da proposta</h3><p>Validação do pacote, datas confirmadas e condição de pagamento escolhida.</p></div>
+   <div class="step"><div class="n">2</div><h3>Envio do contrato</h3><p>Formalização com escopo, datas, valores, responsabilidade e regras operacionais.</p></div>
+   <div class="step"><div class="n">3</div><h3>Operação programada</h3><p>Execução das retiradas e entregas em mãos conforme cronograma validado.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section cta" id="aceite">
+ <div class="wrap">
+  <p class="kicker" style="color:var(--gold2)">Aceite da proposta</p>
+  <h2>Aprovar proposta e receber contrato.</h2>
+  <p>O aceite confirma o orçamento de 34 operações programadas, no valor total de R$ 4.324,80. Após o aceite, enviamos o contrato para formalização e seguimos com a organização operacional.</p>
+  <a class="btn btn-primary" href="https://wa.me/11924782555?text=Ol%C3%A1%2C+recebi+o+or%C3%A7amento+da+Alegria+Produ%C3%A7%C3%B5es+para+retirada+e+entrega+de+lanches+e+quero+seguir+com+o+aceite+para+receber+o+contrato+de+presta%C3%A7%C3%A3o+de+servi%C3%A7o." target="_blank">Aprovar proposta e receber contrato</a>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap footer">
+  <div><strong>Osasco Express</strong><br><small>Osasco Express Serviços Ltda – ME<br>CNPJ 54.707.097/0001-04<br>Av. Diogo Antônio Feijó, 8555, Km 18, Osasco/SP</small></div>
+  <small>ALEGRIA PRODUÇÕES ARTÍSTICAS LTDA<br>CNPJ 23.727.330/0001-89<br>Orçamento sujeito à validação final do cronograma.</small>
+ </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') }), {threshold:.12});
+document.querySelectorAll('.fade').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
