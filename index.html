@@ -6,7 +6,7 @@
 <title>Orçamento | Alegria Produções Artísticas × Osasco Express</title>
 <meta name="description" content="Orçamento para retirada e entrega programada de lanches entre Dona Deôla e Teatro BTG Pactual Hall.">
 <meta property="og:title" content="Alegria Produções Artísticas × Osasco Express">
-<meta property="og:description" content="Retirada e entrega programada de lanches para apoio/catering, com valor fechado por operação e nota fiscal.">
+<meta property="og:description" content="Retirada e entrega programada de lanches para apoio de lanches, com valor fechado por operação e nota fiscal.">
 <meta property="og:image" content="assets/motoboy-osasco-express-avenida-paulista.png">
 <style>
 :root{
@@ -1948,6 +1948,107 @@ img{
   }
 }
 
+
+/* UX MOBILE — DATAS OPCIONAIS E FECHÁVEIS */
+.dates-mobile-cta{
+  display:none;
+}
+.dates-panel-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:14px;
+}
+.dates-panel-head h3{
+  margin:0;
+}
+.dates-close{
+  display:none;
+  appearance:none;
+  border:0;
+  cursor:pointer;
+  border-radius:999px;
+  padding:10px 14px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  font-weight:900;
+  background:#0b0a10;
+  color:#fff;
+}
+@media(max-width:760px){
+  .dates-mobile-cta{
+    display:block;
+    background:rgba(255,250,243,.96);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:16px;
+    box-shadow:var(--soft);
+    margin-bottom:14px;
+  }
+  .dates-mobile-cta .btn{
+    width:100%;
+    border-radius:15px;
+  }
+  .dates-mobile-cta p{
+    font-size:13px;
+    line-height:1.55;
+    margin-top:10px;
+    color:var(--muted);
+  }
+  #cronograma .dates-panel{
+    display:none;
+    margin-top:12px;
+  }
+  #cronograma .dates-panel.is-open{
+    display:block;
+  }
+  #cronograma .dates-close{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    flex:0 0 auto;
+  }
+  #cronograma .dates-panel-head{
+    align-items:flex-start;
+  }
+  #cronograma .dates-panel-head h3{
+    font-size:19px;
+    line-height:1.15;
+  }
+  #cronograma .date-grid{
+    grid-template-columns:1fr !important;
+    gap:10px;
+  }
+  #cronograma .date-pill{
+    display:grid;
+    grid-template-columns:72px 1fr;
+    column-gap:10px;
+    align-items:center;
+    padding:12px;
+    min-height:auto;
+  }
+  #cronograma .date-pill b{
+    grid-row:1 / span 2;
+    font-size:16px;
+  }
+  #cronograma .date-pill span{
+    font-size:12px;
+    margin:0;
+  }
+  #cronograma .date-pill small{
+    font-size:11px;
+    margin:3px 0 0;
+  }
+  #cronograma details{
+    margin-top:14px !important;
+  }
+  #cronograma summary{
+    padding:16px 18px;
+    font-size:13px;
+  }
+}
+
 </style>
 </head>
 <body id="top">
@@ -1971,8 +2072,8 @@ img{
  <div class="wrap hero-grid">
   <div class="fade">
    <div class="badge">Orçamento para ALEGRIA PRODUÇÕES ARTÍSTICAS LTDA</div>
-   <p class="kicker">Apoio/catering para temporada em São Paulo</p>
-   <h1>Apoio de catering <span>sem improviso.</span></h1>
+   <p class="kicker">Entrega de lanches para temporada em São Paulo</p>
+   <h1>Apoio de lanches <span>sem improviso.</span></h1>
    <p class="lead">Para a temporada da Alegria Produções, a Osasco Express organiza a retirada dos lanches na Dona Deôla e a entrega em mãos no Teatro BTG Pactual Hall, com rota definida, comunicação operacional e contrato de prestação de serviço.</p>
    <div class="hero-actions">
     <a class="btn btn-primary" href="#valores">Ver orçamento</a>
@@ -1992,7 +2093,7 @@ img{
   <div class="wrap">
     <div class="section-head fade">
       <p class="kicker">Resumo para decisão</p>
-      <h2>O pacote resolve 34 datas de apoio/catering com rota, entrega em mãos e contrato.</h2>
+      <h2>O pacote resolve 34 datas de apoio de lanches com rota, entrega em mãos e contrato.</h2>
       <p class="section-lead">A proposta foi reorganizada para decisão rápida: primeiro o que será contratado, depois o valor, depois como funciona a operação e por fim a formalização.</p>
     </div>
 
@@ -2057,7 +2158,7 @@ img{
  <div class="wrap">
   <div class="section-head fade">
    <p class="kicker">Escopo do serviço</p>
-   <h2>Retirada e entrega programada de lanches para apoio de produção.</h2>
+   <h2>Retirada e entrega programada de lanches para a produção.</h2>
    <p class="section-lead">O orçamento foi estruturado para uma operação recorrente, com rota definida, cronograma de datas e entrega em mãos no destino. A proposta não trata de delivery comum, mas de apoio logístico para produção artística.</p>
   </div>
 
@@ -2244,16 +2345,25 @@ img{
 </section>
 
 <section class="section" id="cronograma">
- <div class="wrap">
-  <div class="section-head fade">
-   <p class="kicker">Cronograma considerado</p>
-   <h2>34 operações confirmadas no orçamento principal.</h2>
-   <p class="section-lead">Foram consideradas as datas que possuem indicação de atendimento para 40 ou 65 pessoas no cronograma. Datas em branco, sem sessão ou apenas “a confirmar” não entram no total principal.</p>
-  </div>
-  <div class="date-box fade">
-   <h3>Datas confirmadas consideradas</h3>
-   <div class="date-grid">
-    <div class="date-pill"><b>08/jun</b><span>Segunda-feira</span><small>40 pessoas • 15h</small></div>
+  <div class="wrap">
+    <div class="section-head fade">
+      <p class="kicker">Cronograma considerado</p>
+      <h2>34 operações confirmadas no orçamento principal.</h2>
+      <p class="section-lead">Foram consideradas as datas que possuem indicação de atendimento para 40 ou 65 pessoas no cronograma. Datas em branco, sem sessão ou apenas “a confirmar” não entram no total principal.</p>
+    </div>
+
+    <div class="dates-mobile-cta fade">
+      <button class="btn btn-primary dates-toggle" type="button" aria-expanded="false" aria-controls="mobileDatesPanel">Ver datas confirmadas</button>
+      <p>Para facilitar a leitura no celular, as datas ficam recolhidas. Você pode abrir, conferir e fechar para continuar lendo a proposta.</p>
+    </div>
+
+    <div class="date-box fade dates-panel" id="mobileDatesPanel">
+      <div class="dates-panel-head">
+        <h3>Datas confirmadas consideradas</h3>
+        <button class="dates-close" type="button" aria-label="Fechar datas">Fechar</button>
+      </div>
+      <div class="date-grid">
+        <div class="date-pill"><b>08/jun</b><span>Segunda-feira</span><small>40 pessoas • 15h</small></div>
 <div class="date-pill"><b>09/jun</b><span>Terça-feira</span><small>40 pessoas • 15h</small></div>
 <div class="date-pill"><b>10/jun</b><span>Quarta-feira</span><small>40 pessoas • 15h</small></div>
 <div class="date-pill"><b>11/jun</b><span>Quinta-feira</span><small>65 pessoas • 15h</small></div>
@@ -2286,11 +2396,11 @@ img{
 <div class="date-pill"><b>02/ago</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
 <div class="date-pill"><b>07/ago</b><span>Sexta-feira</span><small>65 pessoas • 15h</small></div>
 <div class="date-pill"><b>08/ago</b><span>Sábado</span><small>65 pessoas • 11h</small></div>
-<div class="date-pill"><b>09/ago</b><span>Domingo</span><small>65 pessoas • 11h</small></div>
-   </div>
-  </div>
+<div class="date-pill"><b>09/ago</b><span>Domingo</span><small>65 pessoas • 11h</small>
+      </div>
+    </div>
 
-  <details class="fade" style="margin-top:18px">
+    <details class="fade" style="margin-top:18px">
    <summary>Ver datas a confirmar não inclusas</summary>
    <div class="date-box" style="border:0;box-shadow:none;border-radius:0">
     <p>Estas datas aparecem no cronograma como sessão a confirmar e só devem entrar no orçamento mediante confirmação.</p>
@@ -2304,7 +2414,7 @@ img{
     </div>
    </div>
   </details>
- </div>
+  </div>
 </section>
 
 <section class="section-tight light" id="contratante">
@@ -2356,5 +2466,40 @@ img{
 const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') }), {threshold:.12});
 document.querySelectorAll('.fade').forEach(el => io.observe(el));
 </script>
+
+<script>
+(function(){
+  const toggle = document.querySelector('.dates-toggle');
+  const panel = document.getElementById('mobileDatesPanel');
+  const closeBtn = document.querySelector('.dates-close');
+
+  function openDates(){
+    if(!panel || !toggle) return;
+    panel.classList.add('is-open');
+    toggle.setAttribute('aria-expanded','true');
+    toggle.textContent = 'Datas abertas';
+    panel.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  function closeDates(){
+    if(!panel || !toggle) return;
+    panel.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.textContent = 'Ver datas confirmadas';
+    toggle.scrollIntoView({behavior:'smooth', block:'center'});
+  }
+
+  if(toggle){
+    toggle.addEventListener('click', function(){
+      if(panel && panel.classList.contains('is-open')) closeDates();
+      else openDates();
+    });
+  }
+  if(closeBtn){
+    closeBtn.addEventListener('click', closeDates);
+  }
+})();
+</script>
+
 </body>
 </html>
