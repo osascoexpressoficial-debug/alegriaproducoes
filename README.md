@@ -7,8 +7,9 @@ Pacote final para subir no GitHub Pages.
 - `assets/`
 
 ## Revisão final
-- Hero corrigido com foto única do motoboy no lado direito.
-- Sem divisão com imagem do teatro na primeira dobra.
-- Foto proporcional, sem área vazia.
-- Assets conferidos.
+- Nova imagem premium do motoboy aplicada no hero.
+- Foto única no lado direito, sem divisão e sem área vazia.
+- Copy do hero revisada.
+- Termo “catering” removido.
+- Datas no celular ficam recolhidas e podem ser abertas/fechadas.
 - Sem arquivos internos de revisão ou bastidor.
