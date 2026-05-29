@@ -7,7 +7,7 @@
 <meta name="description" content="Orçamento para retirada e entrega programada de lanches entre Dona Deôla e Teatro BTG Pactual Hall.">
 <meta property="og:title" content="Alegria Produções Artísticas × Osasco Express">
 <meta property="og:description" content="Retirada e entrega programada de lanches para apoio de lanches, com valor fechado por operação e nota fiscal.">
-<meta property="og:image" content="assets/motoboy-osasco-express-avenida-paulista.png">
+<meta property="og:image" content="assets/motoboy-osasco-express-avenida-paulista-premium.png">
 <style>
 :root{
  --navy:#11182d;
@@ -1949,104 +1949,122 @@ img{
 }
 
 
+
+/* HERO FINAL COM IMAGEM PREMIUM — SEM ÁREA VAZIA */
+.hero-photo-card{
+  display:block !important;
+  position:relative !important;
+  overflow:hidden !important;
+  border-radius:34px !important;
+  background:#0b0a10 !important;
+  border:1px solid rgba(201,163,90,.42) !important;
+  box-shadow:0 28px 78px rgba(11,10,16,.24) !important;
+}
+.hero-photo-card > img{
+  display:block !important;
+  width:100% !important;
+  height:clamp(430px,44vw,610px) !important;
+  object-fit:cover !important;
+  object-position:center top !important;
+}
+.hero-photo-card .hero-caption{
+  position:absolute !important;
+  left:18px !important;
+  right:18px !important;
+  bottom:18px !important;
+  padding:16px 18px !important;
+  border-radius:20px !important;
+  background:linear-gradient(135deg,rgba(11,10,16,.92),rgba(91,24,50,.90)) !important;
+  border:1px solid rgba(201,163,90,.32) !important;
+  backdrop-filter:blur(10px) !important;
+}
+.hero-photo-card .hero-caption b{
+  display:block !important;
+  color:#fff !important;
+  font-size:19px !important;
+  line-height:1.15 !important;
+}
+.hero-photo-card .hero-caption span{
+  display:block !important;
+  color:rgba(255,255,255,.78) !important;
+  font-size:12.5px !important;
+  margin-top:4px !important;
+}
+@media(min-width:981px){
+  .hero-grid{
+    grid-template-columns:minmax(0,.90fr) minmax(430px,1.10fr) !important;
+    gap:clamp(34px,5vw,68px) !important;
+    align-items:center !important;
+  }
+  .hero-photo-card{
+    max-width:600px !important;
+    margin-left:auto !important;
+  }
+  h1{
+    font-size:clamp(42px,4.45vw,64px) !important;
+    line-height:1.0 !important;
+    max-width:620px !important;
+  }
+}
+@media(max-width:980px){
+  .hero-photo-card{
+    max-width:760px !important;
+    margin:0 auto !important;
+  }
+}
+@media(max-width:760px){
+  .hero-photo-card{
+    border-radius:22px !important;
+  }
+  .hero-photo-card > img{
+    height:390px !important;
+    object-position:center top !important;
+  }
+  .hero-photo-card .hero-caption{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    border-radius:0 !important;
+    padding:14px 16px !important;
+    background:linear-gradient(135deg,#0b0a10,#5b1832) !important;
+  }
+}
+@media(max-width:390px){
+  .hero-photo-card > img{
+    height:340px !important;
+  }
+}
+
 /* UX MOBILE — DATAS OPCIONAIS E FECHÁVEIS */
-.dates-mobile-cta{
-  display:none;
-}
-.dates-panel-head{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-  margin-bottom:14px;
-}
-.dates-panel-head h3{
-  margin:0;
-}
+.dates-mobile-cta{display:none}
+.dates-panel-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}
+.dates-panel-head h3{margin:0}
 .dates-close{
-  display:none;
-  appearance:none;
-  border:0;
-  cursor:pointer;
-  border-radius:999px;
-  padding:10px 14px;
-  font-family:Arial,Helvetica,sans-serif;
-  font-size:12px;
-  font-weight:900;
-  background:#0b0a10;
-  color:#fff;
+  display:none;appearance:none;border:0;cursor:pointer;border-radius:999px;padding:10px 14px;
+  font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:900;background:#0b0a10;color:#fff;
 }
 @media(max-width:760px){
   .dates-mobile-cta{
-    display:block;
-    background:rgba(255,250,243,.96);
-    border:1px solid var(--line);
-    border-radius:20px;
-    padding:16px;
-    box-shadow:var(--soft);
-    margin-bottom:14px;
+    display:block;background:rgba(255,250,243,.96);border:1px solid var(--line);
+    border-radius:20px;padding:16px;box-shadow:var(--soft);margin-bottom:14px;
   }
-  .dates-mobile-cta .btn{
-    width:100%;
-    border-radius:15px;
-  }
-  .dates-mobile-cta p{
-    font-size:13px;
-    line-height:1.55;
-    margin-top:10px;
-    color:var(--muted);
-  }
-  #cronograma .dates-panel{
-    display:none;
-    margin-top:12px;
-  }
-  #cronograma .dates-panel.is-open{
-    display:block;
-  }
-  #cronograma .dates-close{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    flex:0 0 auto;
-  }
-  #cronograma .dates-panel-head{
-    align-items:flex-start;
-  }
-  #cronograma .dates-panel-head h3{
-    font-size:19px;
-    line-height:1.15;
-  }
-  #cronograma .date-grid{
-    grid-template-columns:1fr !important;
-    gap:10px;
-  }
+  .dates-mobile-cta .btn{width:100%;border-radius:15px}
+  .dates-mobile-cta p{font-size:13px;line-height:1.55;margin-top:10px;color:var(--muted)}
+  #cronograma .dates-panel{display:none;margin-top:12px}
+  #cronograma .dates-panel.is-open{display:block}
+  #cronograma .dates-close{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+  #cronograma .dates-panel-head{align-items:flex-start}
+  #cronograma .dates-panel-head h3{font-size:19px;line-height:1.15}
+  #cronograma .date-grid{grid-template-columns:1fr !important;gap:10px}
   #cronograma .date-pill{
-    display:grid;
-    grid-template-columns:72px 1fr;
-    column-gap:10px;
-    align-items:center;
-    padding:12px;
-    min-height:auto;
+    display:grid;grid-template-columns:72px 1fr;column-gap:10px;align-items:center;padding:12px;min-height:auto;
   }
-  #cronograma .date-pill b{
-    grid-row:1 / span 2;
-    font-size:16px;
-  }
-  #cronograma .date-pill span{
-    font-size:12px;
-    margin:0;
-  }
-  #cronograma .date-pill small{
-    font-size:11px;
-    margin:3px 0 0;
-  }
-  #cronograma details{
-    margin-top:14px !important;
-  }
-  #cronograma summary{
-    padding:16px 18px;
-    font-size:13px;
-  }
+  #cronograma .date-pill b{grid-row:1 / span 2;font-size:16px}
+  #cronograma .date-pill span{font-size:12px;margin:0}
+  #cronograma .date-pill small{font-size:11px;margin:3px 0 0}
+  #cronograma details{margin-top:14px !important}
+  #cronograma summary{padding:16px 18px;font-size:13px}
 }
 
 </style>
@@ -2081,8 +2099,8 @@ img{
    </div>
    <div class="note"><strong>O ponto central:</strong> não é contratar uma corrida. É tirar da produção uma tarefa repetida, sensível a horário e sujeita a ruído justamente nos dias em que a equipe precisa estar concentrada no espetáculo.</div>
   </div>
-    <div class="hero-card hero-card-single fade">
-      <img src="assets/motoboy-osasco-express-avenida-paulista.png" alt="Entregador da Osasco Express em operação na Avenida Paulista">
+    <div class="hero-card hero-card-single hero-photo-card fade">
+      <img src="assets/motoboy-osasco-express-avenida-paulista-premium.png" alt="Entregador da Osasco Express em operação na Avenida Paulista">
       <div class="hero-caption"><b>Entrega programada, sem improviso diário.</b><span>Uma rotina definida para retirada, trajeto e entrega em mãos.</span></div>
     </div></div>
 </header>
@@ -2466,6 +2484,7 @@ img{
 const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') }), {threshold:.12});
 document.querySelectorAll('.fade').forEach(el => io.observe(el));
 </script>
+
 
 <script>
 (function(){
