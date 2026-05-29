@@ -7,7 +7,7 @@
 <meta name="description" content="Orçamento para retirada e entrega programada de lanches entre Dona Deôla e Teatro BTG Pactual Hall.">
 <meta property="og:title" content="Alegria Produções Artísticas × Osasco Express">
 <meta property="og:description" content="Retirada e entrega programada de lanches para apoio/catering, com valor fechado por operação e nota fiscal.">
-<meta property="og:image" content="assets/teatro-btg-pactual-hall.jpg">
+<meta property="og:image" content="assets/motoboy-osasco-express-avenida-paulista.png">
 <style>
 :root{
  --navy:#11182d;
@@ -1218,6 +1218,63 @@ body{
   .btn{transition:none}
 }
 
+
+/* AJUSTE FINAL HERO — GANCHO CURTO E PROPORÇÃO PREMIUM */
+@media(min-width:981px){
+  .hero{
+    padding:56px 0 54px !important;
+  }
+  .hero-grid{
+    grid-template-columns:minmax(0,.86fr) minmax(420px,1.14fr) !important;
+    gap:clamp(42px,5vw,76px) !important;
+  }
+  .hero h1,
+  h1{
+    font-size:clamp(44px,4.05vw,58px) !important;
+    line-height:.98 !important;
+    max-width:560px !important;
+    letter-spacing:-.055em !important;
+  }
+  .lead{
+    max-width:590px !important;
+    font-size:15.8px !important;
+    line-height:1.72 !important;
+  }
+  .hero-card{
+    max-width:620px !important;
+    margin-left:auto !important;
+  }
+  .hero-card img{
+    height:245px !important;
+  }
+  .hero-caption b{
+    font-size:20px !important;
+  }
+}
+@media(max-width:760px){
+  .hero h1,
+  h1{
+    font-size:clamp(32px,10vw,40px) !important;
+    max-width:100% !important;
+  }
+}
+
+
+/* IMAGEM HERO OSASCO EXPRESS — AJUSTE FINAL */
+.hero-card-grid img:first-child{
+  object-position:center;
+}
+@media(min-width:981px){
+  .hero-card-grid img:first-child{
+    object-position:center;
+  }
+}
+@media(max-width:390px){
+  .hero-card-grid img:first-child{
+    object-position:center;
+  }
+}
+
 </style>
 </head>
 <body id="top">
@@ -1242,8 +1299,8 @@ body{
   <div class="fade">
    <div class="badge">Orçamento para ALEGRIA PRODUÇÕES ARTÍSTICAS LTDA</div>
    <p class="kicker">Apoio/catering para temporada em São Paulo</p>
-   <h1>Lanche entregue no teatro, <span>sem virar preocupação da produção.</span></h1>
-   <p class="lead">Esta proposta organiza a retirada dos lanches na Dona Deôla da R. Pio XI e a entrega em mãos no Teatro BTG Pactual Hall, conforme as datas confirmadas no cronograma enviado.</p>
+   <h1>Apoio de catering <span>sem improviso.</span></h1>
+   <p class="lead">Para a temporada da Alegria Produções, a Osasco Express organiza a retirada dos lanches na Dona Deôla e a entrega em mãos no Teatro BTG Pactual Hall, com rota definida, comunicação operacional e contrato de prestação de serviço.</p>
    <div class="hero-actions">
     <a class="btn btn-primary" href="#valores">Ver orçamento</a>
     <a class="btn btn-secondary" href="#cronograma">Ver datas consideradas</a>
@@ -1252,7 +1309,7 @@ body{
   </div>
   <div class="hero-card fade">
    <div class="hero-card-grid">
-    <img src="assets/dona-deola-pio-xi.jpg" alt="Dona Deôla R. Pio XI">
+    <img src="assets/motoboy-osasco-express-avenida-paulista.png" alt="Entregador da Osasco Express em operação na Avenida Paulista">
     <img src="assets/teatro-btg-pactual-hall.jpg" alt="Teatro BTG Pactual Hall">
    </div>
    <div class="hero-caption"><b>Da cozinha ao palco, com horário e responsabilidade.</b><span>Operação programada para apoio de produção.</span></div>

@@ -1,24 +1,19 @@
 # Proposta Alegria Produções Artísticas - Osasco Express
 
-Pacote final para publicação.
+Pacote final para publicação no GitHub Pages.
 
-## Estrutura
+## Estrutura para subir
+Suba estes itens na raiz do repositório ou da pasta publicada:
+
 - `index.html`
 - `assets/`
 
-## Organização final das dobras
-A proposta foi reorganizada para fechamento:
+## Imagens incluídas
+- `motoboy-osasco-express-avenida-paulista.png`
+- `dona-deola-pio-xi.jpg`
+- `teatro-btg-pactual-hall.jpg`
 
-1. Hero com gancho de decisão
-2. Resumo para decisão
-3. Autoridade / dados da Osasco Express
-4. Escopo e rota
-5. Proposta organizada
-6. Valores
-7. Condições comerciais
-8. Como funciona no dia
-9. Responsabilidades e não incluso
-10. Cronograma
-11. Dados da contratante
-12. Formalização
-13. Aceite
+## Revisão final
+- Imagem institucional da Osasco Express incluída no hero.
+- Primeira dobra com autoridade visual da operação.
+- Pacote sem arquivos internos de revisão, memorando ou bastidor.
